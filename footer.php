@@ -10,7 +10,7 @@
 				<?php #wp_list_pages('title_li= '); ?> <!-- Commented out because it's a bitch right now -->
 			</p>
 			<p>
-				 
+				<!--LIST OF STUFF WHERE YOU CAN FIND MORE INFORMATION ABOUT ME-->
 				<!--Powered by <a href="http://wordpress.org/">WordPress</a>.-->
 				More information about PBP at:
 				 <a href="http://www.linkedin.com/in/pratikpramanik" class="rss">LinkedIn</a>

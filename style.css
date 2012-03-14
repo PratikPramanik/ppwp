@@ -108,6 +108,37 @@ img {
 	height: auto;
 }
 
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
+/* HEADER Specific */
+#header {
+font-family: "Lucida Bright", serif;
+text-align: center;
+color: #FFF;
+padding-top: 40px
+}
+#header a {
+color: #FFF;
+text-decoration: none;
+}
+#header a:hover{
+color: #000;
+}
+
+#title-row {
+background: #669966;
+min-height: 75px;
+}
+
+#navbar {
+text-align: center;
+}
+/* END! HEADER Specific */
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
 /* FOOTER Specific */
 #footer{
 }
@@ -159,6 +190,9 @@ color: white;
 margin: 0 0 7px 0; /*This should be the same as #foot-info p*/
 }
 /* END! FOOTER Specific */
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
 
 /* Smaller screens */
 

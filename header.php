@@ -24,28 +24,6 @@
 	text-align: left;
 	margin: 10px 0 0 0;
 	}
-	
-	#header {
-	font-family: "Lucida Bright", serif;
-	text-align: center;
-	color: #FFF;
-	padding-top: 40px
-	}
-	#header a {
-	color: #FFF;
-	}
-	#header a:hover{
-	color: #000;
-	}
-	
-	#title-row {
-	background: #669966;
-	min-height: 75px;
-	}
-	
-	#navbar {
-	text-align: center;
-	}
 	</style>
 
 <?php wp_head(); ?>
