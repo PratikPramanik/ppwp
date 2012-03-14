@@ -12,21 +12,58 @@
 <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+	<!--Delete embedded styles, just for example.-->
+	<style type="text/css">
+	
+	body {
+	font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	
+	.container p {
+	color: #000;
+	text-align: left;
+	margin: 10px 0 0 0;
+	}
+	
+	#header {
+	font-family: "Lucida Bright", serif;
+	text-align: center;
+	color: #FFF;
+	padding-top: 40px
+	}
+	#header a {
+	color: #FFF;
+	}
+	#header a:hover{
+	color: #000;
+	}
+	
+	#title-row {
+	background: #669966;
+	min-height: 75px;
+	}
+	
+	#navbar {
+	text-align: center;
+	}
+	</style>
+
 <?php wp_head(); ?>
 
 </head>
 <body>
 <div class="wrapper"> <!--end in Footer.php-->
 
-	<div class="container">
+	<div class="container header">
 		<!-- TITLE BAR AT VERY TOP -->
-		<div class="row">
+		<div id="title-row"> <!-- Border to Border div -->
+		<div class="row" >
 			<div class="threecol">
 				<!--<p>Three columns</p>-->
 			</div>
 			
 			<div id="header" class="sixcol">
-				 <h1><?php bloginfo('description'); ?><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a><span class="description"></span></h1>	
+				 <h1><?php #bloginfo('description'); ?><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a><span class="description"></span></h1>	
 
 				<!--<ul id="nav">
 				  <?php #wp_list_pages('title_li=Pages'); ?>
@@ -38,6 +75,7 @@
 			<div class="threecol last">
 				<!--<p>Three columns</p>-->
 			</div>
+		</div>
 		</div>
 		
 		<!-- NAV BAR ROW -->
