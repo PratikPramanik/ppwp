@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-
 <div class="container" id="blog"> <!-- Blog --->
 	<div class="row">
 		<div class="twocol">

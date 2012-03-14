@@ -136,14 +136,14 @@ font-size: 14px;
 #header {
 font-family: "Lucida Bright", serif;
 text-align: center;
-color: #FFF;
+color: white;
 }
 #header a {
-color: #FFF;
+color: white;
 text-decoration: none;
 }
 #header a:hover{
-color: #000;
+color: black;
 }
 
 #title-row {
@@ -159,6 +159,14 @@ padding-top: 40px;
 #navbar {
 text-align: center;
 padding-top: 10px;
+color: black;
+}
+#navbar a{
+color: black;
+text-decoration: underline;
+}
+#navbar a:hover{
+color: #ccc;
 }
 /* END! HEADER Specific */
 

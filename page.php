@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 
 
-<div class="container" id="blog"> <!-- Blog --->
+<div class="container" id="page"> <!-- Blog --->
 	<div class="row">
 		<div class="twocol">
 			<!--<p>Three columns</p>-->
 		</div>
+		
 		<div class="eightcol">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<div class="post" id="post-<?php the_ID(); ?>">
@@ -20,6 +21,7 @@
 			<?php endwhile; endif; ?>
 			<?php edit_post_link('Edit', '<p>', '</p>'); ?>
 		</div>
+		
 		<div class="twocol last">
 			<!--<p>Three columns</p>-->
 		</div>

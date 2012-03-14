@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Blog
+*/
+?>
+
 <?php get_header(); ?>
 
 <!--BLOG PAGE >> THIS DOES NOT WORK YET, USE https://codex.wordpress.org/Creating_a_Static_Front_Page-->
