@@ -4,7 +4,7 @@
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
-<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <!--[if IE]><link type="text/css" href="<?php bloginfo('template_directory'); ?>/css/ie.css" rel="stylesheet" media="all" /><![endif]-->
@@ -32,7 +32,7 @@
 <body>
 <div class="wrapper"> <!--end in Footer.php-->
 
-	<div class="container header">
+	<div id="header" class="container">
 		<!-- TITLE BAR AT VERY TOP -->
 		<div id="title-row"> <!-- Border to Border div -->
 		<div class="row" >
@@ -40,7 +40,7 @@
 				<!--<p>Three columns</p>-->
 			</div>
 			
-			<div id="header" class="sixcol">
+			<div id="title" class="sixcol">
 				 <h1><?php #bloginfo('description'); ?><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a><span class="description"></span></h1>	
 
 				<!--<ul id="nav">
@@ -56,14 +56,14 @@
 		</div>
 		</div>
 		
-		<!-- NAV BAR ROW -->
-		<div class="row">
+		<!-- NAV BAR ROW --><!-- *** might want to switch to full length -->
+		<div id="navbar" class="row">
 			<div class="threecol">
 				<!--<p>Three columns</p>-->
 			</div>
 			
-			<div id="navbar" class="sixcol" >
-				<a>Portfolio</a>
+			<div class="sixcol visual-menu" >
+				<a>Design</a>
 				<a>Papers</a>
 				<a>Artwork</a>
 				<a>Blog</a>

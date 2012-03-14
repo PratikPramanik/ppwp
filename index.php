@@ -1,9 +1,13 @@
 <?php get_header(); ?>
 
 <!-- Front Page -->
-<div class="container">
+<div class="container" id="blog">
 	<div class="row">
 		<!-- PROFILE/ABOUT ME -->
+		<div class="onecol">
+			<!--EMPTY -->
+		</div>
+		
 		<div class="eightcol" id="profile">
 			<?php if (have_posts()) : ?>
 			
@@ -44,7 +48,7 @@
 		</div>
 		
 		<!-- SIDEBAR -->
-		<div class="fourcol last">
+		<div class="threecol last">
 			<?php get_sidebar(); ?>
 		</div>
 	</div>

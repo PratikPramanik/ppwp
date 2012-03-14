@@ -20,14 +20,20 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 /* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
 /* ==================================================================================================================== */
 
+/* Big CONTAINER stuff*/
 .container {
 padding-left: 20px;
 padding-right: 20px;
+padding-bottom: 20px;
 }
-.container.header { /*No padding for header title bar*/
+.container#header{ /*No padding LR for header title bar*/
 padding-left: 0px;
 padding-right: 0px;
 }
+.container#footer{ /*Footer flush with bottom*/
+padding-bottom: 0px;
+}
+/* END! Big CONTAINER stuff*/
 
 .row {
 width: 100%;
@@ -111,12 +117,26 @@ img {
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
 
+/* Getting rid of default(?) Horizontal rule */
+.wrapper hr {display: none;}
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
+/* BLOG specific */
+#blog {
+font-family: "Times New Roman", serif;
+font-size: 14px;
+}
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
 /* HEADER Specific */
 #header {
 font-family: "Lucida Bright", serif;
 text-align: center;
 color: #FFF;
-padding-top: 40px
 }
 #header a {
 color: #FFF;
@@ -129,10 +149,16 @@ color: #000;
 #title-row {
 background: #669966;
 min-height: 75px;
+max-height: 75px;
+}
+
+#title {
+padding-top: 40px;
 }
 
 #navbar {
 text-align: center;
+padding-top: 10px;
 }
 /* END! HEADER Specific */
 
@@ -140,8 +166,6 @@ text-align: center;
 /*---------------------------------------------------------*/
 
 /* FOOTER Specific */
-#footer{
-}
 	/*column left tencol*/
 #foot-info{
 padding-top: 18px;

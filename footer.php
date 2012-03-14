@@ -1,7 +1,7 @@
 <hr />
 
-<div class="container"><!-- FOOTER -->
-	<div id="footer" class="row">
+<div id="footer" class="container"><!-- FOOTER -->
+	<div class="row">
 		<!-- WP DYNAMIC STUFF -->
 		<div id="foot-info" class="tencol">
 			<p>
