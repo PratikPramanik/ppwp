@@ -4,7 +4,7 @@
 <div class="container">
 	<div class="row">
 		<!-- PROFILE/ABOUT ME -->
-		<div class="ninecol" id="profile">
+		<div class="eightcol" id="profile">
 			<?php if (have_posts()) : ?>
 			
 			
@@ -44,7 +44,7 @@
 		</div>
 		
 		<!-- SIDEBAR -->
-		<div class="threecol last">
+		<div class="fourcol last">
 			<?php get_sidebar(); ?>
 		</div>
 	</div>
