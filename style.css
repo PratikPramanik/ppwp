@@ -226,6 +226,28 @@ margin: 0 0 7px 0; /*This should be the same as #foot-info p*/
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
 
+/* 404 Specfic */
+#404 h2{
+font-family: "Lucida Bright", serif;
+font-size: 100;
+text-align: center;
+}
+#404 p{
+font-family: "Lucida Bright", serif;
+font-size: 18;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 40px;
+}
+
+
+/* END! 404 Specific */
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
+
+
 /* Smaller screens */
 
 @media only screen and (max-width: 1023px) {
