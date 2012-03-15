@@ -174,6 +174,9 @@ color: #ccc;
 /*---------------------------------------------------------*/
 
 /* FOOTER Specific */
+#footer .row{
+background: #669966;  /* replace with an image */
+}
 	/*column left tencol*/
 #foot-info{
 padding-top: 18px;
@@ -210,15 +213,17 @@ display: inline;
 }
 	/*column right twocol*/
 #copyright{
-background: #669966;
+background: #669966; /*if the whole row is replaced with an image, comment this out*/
 padding-top: 40px; /*if foot-info is only 2 lines, should be 22 greater than #foot-info*/
-border-color: black;
+/*border-color: black;
 border-style: solid;
+border-width: 1px;*/
 }
 #copyright p{
 padding-left: 10px;
 font-size: 12px;
 color: white;
+/*background: black;*/ /*uncomment when rear is replaced with an image*/
 margin: 0 0 7px 0; /*This should be the same as #foot-info p*/
 }
 /* END! FOOTER Specific */
