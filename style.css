@@ -18,7 +18,8 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 
 /* Base level font and spacing*/
 body {
-background-image:url('/wp-content/themes/ppwp/images/bg.jpg');
+background-attachment: fixed;
+background-image: url('/wp-content/themes/ppwp/images/bg.jpg');
 font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .container p {
@@ -136,10 +137,29 @@ img {
 /*---------------------------------------------------------*/
 
 /* UNIVERSAL STUFF*/
-.content-area
-{
+.content-area{
 background-color: white;
 opacity: 0.8;
+border-color: #669966;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-style: solid;
+}
+
+.content{
+opacity: 1;
+}
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
+/* SIDEBAR specific */
+#sidebar{
+background-color: #333;
+opacity: 0.8;
+border-color: white;
+border-width: 1px;
+border-style: solid;
 }
 
 /*---------------------------------------------------------*/
@@ -211,7 +231,7 @@ float:left;
 #footer{
 position: static;
 bottom: 0px;
-/*width: 100%;*/
+/*width: 100%;*/  /*** UGH make this stick to the bottom of the page not the window*/
 }
 #footer .row{
 border-color: #333;

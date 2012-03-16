@@ -14,7 +14,7 @@ Template Name: Blog
 		</div>
 		
 		<!-- BLOG CONTENT -->
-		<div class="eightcol">
+		<div class="eightcol content-area">
 			<?php if (have_posts()) : ?>
 			
 			

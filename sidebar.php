@@ -1,5 +1,5 @@
 <div id="sidebar">
-	<ul class="nobullet">
+	<ul class="nobullet content">
 		<li><?php if(function_exists('get_search_form')) : ?>
 			<?php get_search_form(); ?>
 			<?php else : ?>
