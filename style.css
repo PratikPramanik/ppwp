@@ -16,6 +16,18 @@ http://www.opensource.org/licenses/gpl-license.php
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
 
 
+/* Base level font and spacing*/
+body {
+background-image:url('/wp-content/themes/ppwp/images/bg.jpg');
+font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container p {
+color: #000;
+text-align: left;
+margin: 10px 0 0 0;
+}
+
+
 /* ==================================================================================================================== */
 /* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
 /* ==================================================================================================================== */
@@ -123,6 +135,16 @@ img {
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
 
+/* UNIVERSAL STUFF*/
+.content-area
+{
+background-color: white;
+opacity: 0.8;
+}
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
 /* BLOG specific */
 #blog {
 font-family: "Times New Roman", serif;
@@ -151,14 +173,17 @@ background: #669966;
 min-height: 75px;
 max-height: 75px;
 }
-
 #title {
 padding-top: 40px;
 }
 
 #navbar {
 text-align: center;
-padding-top: 10px;
+margin-top: 10px;
+border-color: #333;
+border-style: solid;
+border-top-width: 1px;
+border-bottom-width: 1px;
 color: black;
 }
 #navbar a{
@@ -168,14 +193,32 @@ text-decoration: underline;
 #navbar a:hover{
 color: #ccc;
 }
+
+/*Navbar image placements*/
+.navbar-group{
+float:left;
+}
+.navbar-group a{
+float:left;
+}
+
 /* END! HEADER Specific */
 
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
 
 /* FOOTER Specific */
+#footer{
+position: static;
+bottom: 0px;
+/*width: 100%;*/
+}
 #footer .row{
-background: #669966;  /* replace with an image */
+border-color: #333;
+border-style: solid;
+border-top-width: 1px;
+background: #669966;  /*** replace with an image */
+margin: 0px auto;
 }
 	/*column left tencol*/
 #foot-info{
@@ -232,14 +275,16 @@ margin: 0 0 7px 0; /*This should be the same as #foot-info p*/
 /*---------------------------------------------------------*/
 
 /* 404 Specfic */
-#404 h2{
-font-family: "Lucida Bright", serif;
-font-size: 100;
+#error.row{
 text-align: center;
 }
-#404 p{
+#error.row h2{
 font-family: "Lucida Bright", serif;
-font-size: 18;
+font-size: 100px;
+}
+#error.row p{
+font-family: "Lucida Bright", serif;
+font-size: 18px;
 text-align: center;
 padding-top: 10px;
 padding-bottom: 40px;
