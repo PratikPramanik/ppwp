@@ -22,7 +22,7 @@
 		
 		<!-- COPYRIGHT STUFF -->
 		<div id="copyright" class="twocol last">
-			<p> &copy; Pratik Pramanik <?php echo date('Y'); ?></p>
+			<p> &copy; Pratik Bose Pramanik <?php echo date('Y'); ?></p>
 		</div>
 	</div>
 </div>

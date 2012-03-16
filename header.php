@@ -22,12 +22,17 @@
 		<!-- TITLE BAR AT VERY TOP -->
 		<div id="title-row"> <!-- Border to Border div -->
 		<div class="row" >
-			<div class="threecol">
-				<!--<p>Three columns</p>-->
+			<div class="onecol">
+				<!--EMPTY-->
 			</div>
 			
-			<div id="title" class="sixcol">
-				 <h1><?php #bloginfo('description'); ?><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a><span class="description"></span></h1>	
+			<div id="title" class="tencol">
+				<a href="<?php echo get_option('home'); ?>/"><img 	src="wp-content/themes/ppwp/images/header-idle.png" 
+																	onmouseover="this.src='wp-content/themes/ppwp/images/header-hover.png'" 
+																	onmouseout="this.src='wp-content/themes/ppwp/images/header-idle.png'"
+																	width="750" 
+																	height="75"></a>
+				<!--BACKUP<h1><?php #bloginfo('description'); ?><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a><span class="description"></span></h1>-->
 
 				<!--<ul id="nav">
 				  <?php #wp_list_pages('title_li=Pages'); ?>
@@ -36,8 +41,8 @@
 		  
 			</div>
 			
-			<div class="threecol last">
-				<!--<p>Three columns</p>-->
+			<div class="onecol last">
+				<!--EMPTY-->
 			</div>
 		</div>
 		</div>
@@ -45,17 +50,30 @@
 		<!-- NAV BAR ROW --><!-- *** might want to switch to full length -->
 		<div id="navbar" class="row">
 			<div id="navbar-group1" class="navbar-group">
-				<a><img src="wp-content/themes/ppwp/images/design-idle.png"></a>
-				<a><img src="wp-content/themes/ppwp/images/papers-idle.png"></a>
+				<a><img 
+						src="wp-content/themes/ppwp/images/design-idle.png"
+						onmouseover="this.src='wp-content/themes/ppwp/images/design-hover.png'" 
+						onmouseout="this.src='wp-content/themes/ppwp/images/design-idle.png'"></a>
+				<a><img 
+						src="wp-content/themes/ppwp/images/papers-idle.png"
+						onmouseover="this.src='wp-content/themes/ppwp/images/papers-hover.png'" 
+						onmouseout="this.src='wp-content/themes/ppwp/images/papers-idle.png'"></a>
 			</div>
 			<div class="navbar-group">
-				<a href=""><img src="wp-content/themes/ppwp/images/home-idle.png" 
-								onmouseover="this.src='wp-content/themes/ppwp/images/home-hover.png'" 
-								onmouseout="this.src='wp-content/themes/ppwp/images/home-idle.png'"></a>
+				<a href="<?php echo get_option('home'); ?>/"><img 	
+						src="wp-content/themes/ppwp/images/home-idle.png" 
+						onmouseover="this.src='wp-content/themes/ppwp/images/home-hover.png'" 
+						onmouseout="this.src='wp-content/themes/ppwp/images/home-idle.png'"></a>
 			</div>
 			<div id="navbar-group2" class="navbar-group">
-				<a><img src="wp-content/themes/ppwp/images/other-idle.png"></a>
-				<a><img src="wp-content/themes/ppwp/images/blog-idle.png"></a>
+				<a><img 
+						src="wp-content/themes/ppwp/images/other-idle.png"
+						onmouseover="this.src='wp-content/themes/ppwp/images/other-hover.png'" 
+						onmouseout="this.src='wp-content/themes/ppwp/images/other-idle.png'"></a>
+				<a><img 
+						src="wp-content/themes/ppwp/images/blog-idle.png"
+						onmouseover="this.src='wp-content/themes/ppwp/images/blog-hover.png'" 
+						onmouseout="this.src='wp-content/themes/ppwp/images/blog-idle.png'"></a>
 			</div>
 		</div>
 	</div>

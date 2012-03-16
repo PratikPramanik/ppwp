@@ -30,8 +30,12 @@ margin: 10px 0 0 0;
 }
 a{
 color: #3399cc;
+text-decoration: none;
 }
-
+a:hover{
+text-decoration: underline;
+}
+.wrapper { min-height: 500px; zoom:1;}
 
 /* ==================================================================================================================== */
 /* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
@@ -144,9 +148,9 @@ img {
 .content-area{
 background-color: white;
 opacity: 0.8;
-border-color: #669966;
-border-top-width: 1px;
-border-bottom-width: 1px;
+border-color: #003333;
+border-top-width: 2px;
+border-bottom-width: 2px;
 border-style: solid;
 }
 
@@ -213,7 +217,7 @@ padding:
 
 /* BLOG specific */
 #blog {
-font-family: "Times New Roman", serif;
+font-family: Georgia, "Times New Roman", Times, serif;
 font-size: 14px;
 }
 
@@ -235,12 +239,12 @@ color: black;
 }
 
 #title-row {
-background: #669966;
+background: #003333;
 min-height: 75px;
 max-height: 75px;
 }
 #title {
-padding-top: 40px;
+/*padding-top: 40px;*/
 }
 
 #navbar {
@@ -279,17 +283,21 @@ position: static;
 bottom: 0px;
 /*width: 100%;*/  /*** UGH make this stick to the bottom of the page not the window*/
 }
+#footer.container{
+background: black;
+padding-bottom: 40px;
+}
 #footer .row{
-border-color: #333;
+border-color: #003333;
 border-style: solid;
-border-top-width: 1px;
-background: #669966;  /*** replace with an image */
+border-top-width: 3px;
+/*background: #669966;  /*** replace with an image */
 margin: 0px auto;
 }
 	/*column left tencol*/
 #foot-info{
 padding-top: 18px;
-background: #669966;
+/*background: #669966;*/
 }
 #foot-info p{
 font-size: 12px;
@@ -301,7 +309,7 @@ color: white;
 color: white;
 }
 #foot-info p a:hover{
-color: black;
+color: #bbb;
 }
 #foot-info .pagenav { /* For page list in the footer */
 font-size: 12px;
@@ -322,13 +330,15 @@ display: inline;
 }
 	/*column right twocol*/
 #copyright{
-background: #669966; /*if the whole row is replaced with an image, comment this out*/
+/*background: #669966; /*if the whole row is replaced with an image, comment this out*/
 padding-top: 40px; /*if foot-info is only 2 lines, should be 22 greater than #foot-info*/
-/*border-color: black;
+border-color: #003333;
 border-style: solid;
-border-width: 1px;*/
+border-left-width: 1px;
+margin-right: -1px; /*match border-left-width to prevent spillover*/
 }
 #copyright p{
+text-align: right;
 padding-left: 10px;
 font-size: 12px;
 color: white;
