@@ -18,14 +18,18 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 
 /* Base level font and spacing*/
 body {
-background-attachment: fixed;
-background-image: url('/wp-content/themes/ppwp/images/bg.jpg');
+background: #ddd;
+/*background-attachment: fixed;
+background-image: url('/wp-content/themes/ppwp/images/bg.jpg');*/
 font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .container p {
 color: #000;
 text-align: left;
 margin: 10px 0 0 0;
+}
+a{
+color: #3399cc;
 }
 
 
@@ -156,10 +160,52 @@ opacity: 1;
 /* SIDEBAR specific */
 #sidebar{
 background-color: #333;
+color: white;
 opacity: 0.8;
 border-color: white;
 border-width: 1px;
+border-style: dotted;
+margin: 0 5px 0px 5px;
+}
+#sidebar ul{
+list-style-type: none;
+}
+#sidebar li{
+
+}
+#sidebar li ul li{
+font-family: Georgia,"Times New Roman",Times,serif;
+padding-left: 5px;
+line-height: 1.6em;
+}
+#sidebar a{
+text-decoration: none;
+}
+#sidebar a:hover{
+text-decoration: underline;
+}
+#sidebar h2{
+font-family: "Lucida Grande","Lucida Sans","Lucida Sans Unicode",sans-serif;
+color: #AFAFAF;
+border-color: #E9E9E9;
+border-bottom-width: 1px;
 border-style: solid;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+font-size: 0.9em;
+margin-bottom: 0.6em;
+padding: 6px 8px 0px 0;
+text-align: left;
+vertical-align: baseline;
+}
+.widget{
+margin-left: 5px;
+margin-right: 5px;
+margin-bottom: 10px;
+padding:
 }
 
 /*---------------------------------------------------------*/
