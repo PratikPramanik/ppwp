@@ -1,13 +1,19 @@
+<?php
+/*
+Template Name: Blog
+*/
+?>
+
 <?php get_header(); ?>
 
-<!-- Front Page -->
-<div id="frontpage" class="container" >
+<!--BLOG PAGE >> THIS DOES NOT WORK YET, USE https://codex.wordpress.org/Creating_a_Static_Front_Page-->
+<div class="container" id="blog">
 	<div class="row">
-		<!-- PROFILE/ABOUT ME -->
 		<div class="twocol">
-			<!--EMPTY -->
+			<!--<p>Three columns</p>--><!--EMPTY-->
 		</div>
 		
+		<!-- BLOG CONTENT -->
 		<div class="eightcol">
 			<?php if (have_posts()) : ?>
 			
@@ -47,9 +53,8 @@
 			<?php endif; ?>
 		</div>
 		
-		<!-- SIDEBAR -->
 		<div class="twocol last">
-			<?php #get_sidebar(); ?>
+			<!--<p>Three columns</p>--><!--EMPTY-->
 		</div>
 	</div>
 </div>

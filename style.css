@@ -20,10 +20,20 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 /* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
 /* ==================================================================================================================== */
 
+/* Big CONTAINER stuff*/
 .container {
 padding-left: 20px;
 padding-right: 20px;
+padding-bottom: 20px;
 }
+.container#header{ /*No padding LR for header title bar*/
+padding-left: 0px;
+padding-right: 0px;
+}
+.container#footer{ /*Footer flush with bottom*/
+padding-bottom: 0px;
+}
+/* END! Big CONTAINER stuff*/
 
 .row {
 width: 100%;
@@ -103,6 +113,144 @@ max-width: 100%;
 img {
 	height: auto;
 }
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
+/* Getting rid of default(?) Horizontal rule */
+.wrapper hr {display: none;}
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
+/* BLOG specific */
+#blog {
+font-family: "Times New Roman", serif;
+font-size: 14px;
+}
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
+/* HEADER Specific */
+#header {
+font-family: "Lucida Bright", serif;
+text-align: center;
+color: white;
+}
+#header a {
+color: white;
+text-decoration: none;
+}
+#header a:hover{
+color: black;
+}
+
+#title-row {
+background: #669966;
+min-height: 75px;
+max-height: 75px;
+}
+
+#title {
+padding-top: 40px;
+}
+
+#navbar {
+text-align: center;
+padding-top: 10px;
+color: black;
+}
+#navbar a{
+color: black;
+text-decoration: underline;
+}
+#navbar a:hover{
+color: #ccc;
+}
+/* END! HEADER Specific */
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
+/* FOOTER Specific */
+#footer .row{
+background: #669966;  /* replace with an image */
+}
+	/*column left tencol*/
+#foot-info{
+padding-top: 18px;
+background: #669966;
+}
+#foot-info p{
+font-size: 12px;
+margin: 0 0 7px 0;
+padding-left: 20px;
+color: white;
+}
+#foot-info p a{
+color: white;
+}
+#foot-info p a:hover{
+color: black;
+}
+#foot-info .pagenav { /* For page list in the footer */
+font-size: 12px;
+color: white;
+}
+#foot-info .pagenav a{
+color: white;
+}
+#foot-info .pagenav a:hover{
+color: black;
+}
+#foot-info .pagenav ul{
+display: inline;
+padding-left: 20px; /*Should match #foot-info p*/
+}
+#foot-info .pagenav li{
+display: inline;
+}
+	/*column right twocol*/
+#copyright{
+background: #669966; /*if the whole row is replaced with an image, comment this out*/
+padding-top: 40px; /*if foot-info is only 2 lines, should be 22 greater than #foot-info*/
+/*border-color: black;
+border-style: solid;
+border-width: 1px;*/
+}
+#copyright p{
+padding-left: 10px;
+font-size: 12px;
+color: white;
+/*background: black;*/ /*uncomment when rear is replaced with an image*/
+margin: 0 0 7px 0; /*This should be the same as #foot-info p*/
+}
+/* END! FOOTER Specific */
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
+/* 404 Specfic */
+#404 h2{
+font-family: "Lucida Bright", serif;
+font-size: 100;
+text-align: center;
+}
+#404 p{
+font-family: "Lucida Bright", serif;
+font-size: 18;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 40px;
+}
+
+
+/* END! 404 Specific */
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
 
 
 /* Smaller screens */
