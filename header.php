@@ -58,21 +58,7 @@
 		
 		<!-- NAV BAR ROW --><!-- *** might want to switch to full length -->
 		<div id="navbar" class="row">
-			<div class="threecol">
-				<!--<p>Three columns</p>-->
-			</div>
-			
-			<div class="sixcol visual-menu" >
-				<a>Design</a>
-				<a>Papers</a>
-				<a>Artwork</a>
-				<a>Blog</a>
-				<a>Home/Root/Profile</a>
-			</div>
-			
-			<div class="threecol last">
-				<!--<p>Three columns</p>-->
-			</div>
+			<a><img src="wp-content/themes/pp_cleanr/images/design-idle.png"></a><a><img src="wp-content/themes/pp_cleanr/images/papers-idle.png"></a><a><img src="wp-content/themes/pp_cleanr/images/home-idle.png"></a><a><img src="wp-content/themes/pp_cleanr/images/other-idle.png"></a><a><img src="wp-content/themes/pp_cleanr/images/blog-idle.png"></a>
 		</div>
 	</div>
 <hr />
