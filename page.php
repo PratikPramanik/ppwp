@@ -19,7 +19,7 @@
 					</div>
 				</div>
 			<?php endwhile; endif; ?>
-			<?php edit_post_link('Edit', '<p>', '</p>'); ?>
+			<?php edit_post_link("[EDIT PAGE]"); ?>
 		</div>
 		
 		<div class="twocol last">
