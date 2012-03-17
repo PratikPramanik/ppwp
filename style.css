@@ -21,7 +21,7 @@ body {
 background: #ddd;
 /*background-attachment: fixed;
 background-image: url('/wp-content/themes/ppwp/images/bg.jpg');*/
-font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: Georgia, "Times New Roman", Times, serif;
 }
 .container p {
 color: #000;
@@ -353,6 +353,8 @@ margin: 0 0 7px 0; /*This should be the same as #foot-info p*/
 /* 404 Specfic */
 #error.row{
 text-align: center;
+min-height: 500px;
+padding-top: 50px;
 }
 #error.row h2{
 font-family: "Lucida Bright", serif;
