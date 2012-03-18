@@ -50,11 +50,11 @@
 		<!-- NAV BAR ROW --><!-- *** might want to switch to full length -->
 		<div id="navbar" class="row">
 			<div id="navbar-group1" class="navbar-group">
-				<a><img 
+				<a href="http://pratikpramanik.com/projects/"><img 
 						src="wp-content/themes/ppwp/images/design-idle.png"
 						onmouseover="this.src='wp-content/themes/ppwp/images/design-hover.png'" 
 						onmouseout="this.src='wp-content/themes/ppwp/images/design-idle.png'"></a>
-				<a><img 
+				<a href="http://pratikpramanik.com/papers/"><img 
 						src="wp-content/themes/ppwp/images/papers-idle.png"
 						onmouseover="this.src='wp-content/themes/ppwp/images/papers-hover.png'" 
 						onmouseout="this.src='wp-content/themes/ppwp/images/papers-idle.png'"></a>
@@ -66,11 +66,11 @@
 						onmouseout="this.src='wp-content/themes/ppwp/images/home-idle.png'"></a>
 			</div>
 			<div id="navbar-group2" class="navbar-group">
-				<a><img 
+				<a href="http://pratikpramanik.com/more/"><img 
 						src="wp-content/themes/ppwp/images/other-idle.png"
 						onmouseover="this.src='wp-content/themes/ppwp/images/other-hover.png'" 
 						onmouseout="this.src='wp-content/themes/ppwp/images/other-idle.png'"></a>
-				<a><img 
+				<a href="http://pratikpramanik.com/blog/"><img 
 						src="wp-content/themes/ppwp/images/blog-idle.png"
 						onmouseover="this.src='wp-content/themes/ppwp/images/blog-hover.png'" 
 						onmouseout="this.src='wp-content/themes/ppwp/images/blog-idle.png'"></a>

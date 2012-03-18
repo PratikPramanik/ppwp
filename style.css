@@ -167,6 +167,12 @@ opacity: 1;
 padding-left: 15px;
 padding-top: 10px;
 }
+.post h2 a{
+color: black;
+}
+.post h2 a:hover{
+color: #3399CC;
+}
 .entry{
 font-size: 1.0em;
 line-height: 1.6em;
@@ -237,10 +243,6 @@ font-size: 9px;
 margin-left: 20px;
 margin-bottom: 10px;
 }
-.postmetadata{
-color: black;
-font-family: Georgia,"Times New Roman",Times,serif;
-}
 
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
@@ -249,16 +251,20 @@ font-family: Georgia,"Times New Roman",Times,serif;
 line-height: 1.2em;
 margin: 0 0 0.1em;
 padding: 0;
-font-family: Georgia,"Times New Roman",Times,serif;
+font-family: "Lucida Grande","Lucida Sans","Lucida Sans Unicode",sans-serif;
 font-style: normal;
 font-variant: normal;
 font-weight: normal;
 letter-spacing: 0;
-text-transform: none;
+color: #777;
+font-size: 0.8em;
 }
-.date {font-size: 30px;font-weight: bold;line-height: 0.8;color:#c00;}
-.postmetadata {font-size:12px;color:#bbb;height:1%}
-.postmetadata small  {font-size:12px;color:#aaa;text-transform: inherit;font-weight: normal;padding: 10px 0; margin:20px 0; border-top: 1px solid #eee;text-transform: none}
+.byline{
+color: #777;
+}
+.date{
+margin-left: 20px;
+}
 
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/

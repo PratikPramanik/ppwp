@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Blog Page
+*/
+?>
+
 <?php get_header(); ?>
 
 <!-- Front Page -->
