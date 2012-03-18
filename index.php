@@ -21,7 +21,7 @@
 							<?php the_content('<em>Continue reading &rarr;</em>'); ?>
 						</div>
 						<div class="clearfix"></div>
-						<span class="postmetadata"><?php edit_post_link('[EDIT PAGE]', '', ' &mdash; '); ?> Category: <?php the_category(' / ') ?> &mdash; <a href="<?php the_permalink() ?>">permalink</a> &mdash;  <?php comments_popup_link('No comments', '1 comment', '% comments'); ?></span><br/>
+						<span class="postmetadata"><?php edit_post_link('[EDIT POST]', '', ' &mdash; '); ?> Category: <?php the_category(' / ') ?> &mdash; <a href="<?php the_permalink() ?>">permalink</a> &mdash;  <?php comments_popup_link('No comments', '1 comment', '% comments'); ?></span><br/>
 
 					</div>
 

@@ -27,9 +27,9 @@
 			</div>
 			
 			<div id="title" class="tencol">
-				<a href="<?php echo get_option('home'); ?>/"><img 	src="wp-content/themes/ppwp/images/header-idle.png" 
-																	onmouseover="this.src='wp-content/themes/ppwp/images/header-hover.png'" 
-																	onmouseout="this.src='wp-content/themes/ppwp/images/header-idle.png'"
+				<a href="<?php echo get_option('home'); ?>/"><img 	src="<?php bloginfo('template_directory'); ?>/images/header-idle.png" 
+																	onmouseover="this.src='<?php bloginfo('template_directory'); ?>/images/header-hover.png'" 
+																	onmouseout="this.src='<?php bloginfo('template_directory'); ?>/images/header-idle.png'"
 																	width="750" 
 																	height="75"></a>
 				<!--BACKUP<h1><?php #bloginfo('description'); ?><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a><span class="description"></span></h1>-->
@@ -51,29 +51,29 @@
 		<div id="navbar" class="row">
 			<div id="navbar-group1" class="navbar-group">
 				<a href="http://pratikpramanik.com/projects/"><img 
-						src="wp-content/themes/ppwp/images/design-idle.png"
-						onmouseover="this.src='wp-content/themes/ppwp/images/design-hover.png'" 
-						onmouseout="this.src='wp-content/themes/ppwp/images/design-idle.png'"></a>
-				<a href="http://pratikpramanik.com/papers/"><img 
-						src="wp-content/themes/ppwp/images/papers-idle.png"
-						onmouseover="this.src='wp-content/themes/ppwp/images/papers-hover.png'" 
-						onmouseout="this.src='wp-content/themes/ppwp/images/papers-idle.png'"></a>
+						src="<?php bloginfo('template_directory'); ?>/images/design-idle.png"
+						onmouseover="this.src='<?php bloginfo('template_directory'); ?>/images/design-hover.png'" 
+						onmouseout="this.src='<?php bloginfo('template_directory'); ?>/images/design-idle.png'"></a>
+				<a href="http://pratikpramanik.com/texts/"><img 
+						src="<?php bloginfo('template_directory'); ?>/images/papers-idle.png"
+						onmouseover="this.src='<?php bloginfo('template_directory'); ?>/images/papers-hover.png'" 
+						onmouseout="this.src='<?php bloginfo('template_directory'); ?>/images/papers-idle.png'"></a>
 			</div>
 			<div class="navbar-group">
 				<a href="<?php echo get_option('home'); ?>/"><img 	
-						src="wp-content/themes/ppwp/images/home-idle.png" 
-						onmouseover="this.src='wp-content/themes/ppwp/images/home-hover.png'" 
-						onmouseout="this.src='wp-content/themes/ppwp/images/home-idle.png'"></a>
+						src="<?php bloginfo('template_directory'); ?>/images/home-idle.png" 
+						onmouseover="this.src='<?php bloginfo('template_directory'); ?>/images/home-hover.png'" 
+						onmouseout="this.src='<?php bloginfo('template_directory'); ?>/images/home-idle.png'"></a>
 			</div>
 			<div id="navbar-group2" class="navbar-group">
 				<a href="http://pratikpramanik.com/more/"><img 
-						src="wp-content/themes/ppwp/images/other-idle.png"
-						onmouseover="this.src='wp-content/themes/ppwp/images/other-hover.png'" 
-						onmouseout="this.src='wp-content/themes/ppwp/images/other-idle.png'"></a>
+						src="<?php bloginfo('template_directory'); ?>/images/other-idle.png"
+						onmouseover="this.src='<?php bloginfo('template_directory'); ?>/images/other-hover.png'" 
+						onmouseout="this.src='<?php bloginfo('template_directory'); ?>/images/other-idle.png'"></a>
 				<a href="http://pratikpramanik.com/blog/"><img 
-						src="wp-content/themes/ppwp/images/blog-idle.png"
-						onmouseover="this.src='wp-content/themes/ppwp/images/blog-hover.png'" 
-						onmouseout="this.src='wp-content/themes/ppwp/images/blog-idle.png'"></a>
+						src="<?php bloginfo('template_directory'); ?>/images/blog-idle.png"
+						onmouseover="this.src='<?php bloginfo('template_directory'); ?>/images/blog-hover.png'" 
+						onmouseout="this.src='<?php bloginfo('template_directory'); ?>/images/blog-idle.png'"></a>
 			</div>
 		</div>
 	</div>

@@ -14,7 +14,7 @@
 				<!--Powered by <a href="http://wordpress.org/">WordPress</a>.-->
 				More information about PBP at:
 				 <a href="http://www.linkedin.com/in/pratikpramanik" class="rss">LinkedIn</a>
-				- <a href="http://www.pratikpramanik.com/resume" class="rss">Resume</a>
+				- <a href="http://www.pratikpramanik.com/more/resume-doc/" class="rss">Resume</a>
 				- <a href="http://www.twitter.com/PratikPramanik" class="rss">Twitter</a>
 				- <a href="http://www.github.com/PratikPramanik" class="rss">Github</a>
 			</p>
