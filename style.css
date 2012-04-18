@@ -3,7 +3,7 @@ Theme Name: PPWP
 Theme URI: https://github.com/PratikPramanik/ppwp
 Description: Pratik Pramanik's theme based on Cleanr developed by Chandra Maharzan. Converted to Grid 1140 created by Andy Taylor. 
 Pretty much fully customized to his liking and nearly unusable for anyone else... I hate that guy.
-Version: 0.2.0 Beta
+Version: 0.2.1 Beta
 Tags: portfolio
 Author: Pratik Pramanik
 Author URI: http://www.pratikpramanik.com/
@@ -19,9 +19,9 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 
 /* Base level font and spacing*/
 body {
-background: #ddd;
-/*background-attachment: fixed;
-background-image: url('/wp-content/themes/ppwp/images/bg.jpg');*/
+/*background: #ddd;*/
+background-attachment: scroll;
+background-image: url('/wp-content/themes/ppwp/images/bg.jpg');
 font-family: Georgia, "Times New Roman", Times, serif;
 }
 .container p {
