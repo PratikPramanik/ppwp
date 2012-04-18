@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container" id="blog"> <!-- Blog --->
+<div class="container" id="blog"> <!-- Blog - Single Post --->
 	<div class="row">
 		<div class="twocol">
 			<!--<p>Three columns</p>--><!--*** - PREVIOUS POST-->
@@ -12,6 +12,7 @@
 
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<h2><?php the_title(); ?></h2>
+				<span class="byline"><small><span class="date"><?php the_time('d') ?></span> <span class="month-year"><?php the_time('M y') ?></span> <span class="author">by <?php the_author() ?></span> | <span class="time"><?php the_time() ?></span></small></span>
 
 				<div class="entry">
 					<?php the_content(); ?>
@@ -20,33 +21,13 @@
 					<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 					<?php the_tags( '<p class="small">Tags: ', ', ', '</p>'); ?>
 
-					<p class="postmetadata alt">
-						<small>
-							This entry was posted on <?php the_time('l, F jS, Y') ?> at <?php the_time() ?>
-							and is filed under <?php the_category(', ') ?>.
-							You can follow any comments to this entry through the <?php post_comments_feed_link('RSS 2.0'); ?> feed.
-
-							<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
-								// Both Comments and Pings are open ?>
-								You can <a href="#respond">leave a comment</a>, or <a href="<?php trackback_url(); ?>" rel="trackback">trackback</a> from your own site.
-
-							<?php } elseif (!('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
-								// Only Pings are Open ?>
-								Responses are currently closed, but you can <a href="<?php trackback_url(); ?> " rel="trackback">trackback</a> from your own site.
-
-							<?php } elseif (('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
-								// Comments are open, Pings are not ?>
-								You can skip to the end and leave a comment. Pinging is currently not allowed.
-
-							<?php } elseif (!('open' == $post-> comment_status) && !('open' == $post->ping_status)) {
-								// Neither Comments, nor Pings are open ?>
-								Both comments and pings are currently closed.
-
-							<?php } edit_post_link('Edit this entry','','.'); ?>
-
-						</small>
-					</p>
-
+					<span class="postmetadata">
+						<?php edit_post_link('[EDIT POST]', '', ' &mdash; '); ?> 
+						Categories: <?php the_category(' / ') ?> &mdash;
+						<a href="<?php trackback_url(); ?> " rel="trackback">Trackback</a> &mdash;
+						<a href="<?php the_permalink() ?>">Permalink</a> &mdash;
+						Tweet
+					</span>
 				</div>
 			</div>
 

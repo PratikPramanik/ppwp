@@ -50,11 +50,11 @@
 		<!-- NAV BAR ROW --><!-- *** might want to switch to full length -->
 		<div id="navbar" class="row">
 			<div id="navbar-group1" class="navbar-group">
-				<a href="http://pratikpramanik.com/projects/"><img 
+				<a href="<?php echo get_option('home'); ?>/projects/"><img 
 						src="<?php bloginfo('template_directory'); ?>/images/design-idle.png"
 						onmouseover="this.src='<?php bloginfo('template_directory'); ?>/images/design-hover.png'" 
 						onmouseout="this.src='<?php bloginfo('template_directory'); ?>/images/design-idle.png'"></a>
-				<a href="http://pratikpramanik.com/texts/"><img 
+				<a href="<?php echo get_option('home'); ?>/texts/"><img 
 						src="<?php bloginfo('template_directory'); ?>/images/papers-idle.png"
 						onmouseover="this.src='<?php bloginfo('template_directory'); ?>/images/papers-hover.png'" 
 						onmouseout="this.src='<?php bloginfo('template_directory'); ?>/images/papers-idle.png'"></a>
@@ -66,11 +66,11 @@
 						onmouseout="this.src='<?php bloginfo('template_directory'); ?>/images/home-idle.png'"></a>
 			</div>
 			<div id="navbar-group2" class="navbar-group">
-				<a href="http://pratikpramanik.com/more/"><img 
+				<a href="<?php echo get_option('home'); ?>/more/"><img 
 						src="<?php bloginfo('template_directory'); ?>/images/other-idle.png"
 						onmouseover="this.src='<?php bloginfo('template_directory'); ?>/images/other-hover.png'" 
 						onmouseout="this.src='<?php bloginfo('template_directory'); ?>/images/other-idle.png'"></a>
-				<a href="http://pratikpramanik.com/blog/"><img 
+				<a href="<?php echo get_option('home'); ?>/blog/"><img 
 						src="<?php bloginfo('template_directory'); ?>/images/blog-idle.png"
 						onmouseover="this.src='<?php bloginfo('template_directory'); ?>/images/blog-hover.png'" 
 						onmouseout="this.src='<?php bloginfo('template_directory'); ?>/images/blog-idle.png'"></a>

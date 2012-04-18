@@ -148,7 +148,6 @@ img {
 /* UNIVERSAL STUFF*/
 .content-area{
 background-color: white;
-opacity: 0.8;
 border-color: #003333;
 border-top-width: 2px;
 border-bottom-width: 2px;
@@ -164,6 +163,10 @@ list-style: disc outside none;
 opacity: 1;
 }
 
+.post {
+padding-bottom: 20px;
+opacity: 1;
+}
 .post h2{
 padding-left: 15px;
 padding-top: 10px;
@@ -241,12 +244,13 @@ font-weight: normal;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 font-size: 9px;
-margin-left: 20px;
+/*margin-left: 20px;*/
 margin-bottom: 10px;
 }
 
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
+
 /*Titles and stuff*/
 .postmetadata{
 line-height: 1.2em;
@@ -260,12 +264,26 @@ letter-spacing: 0;
 color: #777;
 font-size: 0.8em;
 }
+.post .postmetadata{
+padding-left: 20px;
+}
 .byline{
 color: #777;
-}
-.date{
 margin-left: 20px;
 }
+.date{
+
+}
+.time{
+color: #999;
+}
+/*END Titles and Stuff*/
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+
+/*Comments*/
+
 
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
@@ -274,7 +292,6 @@ margin-left: 20px;
 #sidebar{
 background-color: white;
 color: black;
-opacity: 0.8;
 border-color: #333;
 border-top-width: 2px;
 border-bottom-width: 2px;

@@ -9,7 +9,7 @@
 					<div class="clearfix"></div>
 			</div>
 		</div>
-		<div class="eightcol">
+		<div class="eightcol content-area">
 			<?php if (have_posts()) : ?>
 
 			  <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
