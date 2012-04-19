@@ -49,7 +49,24 @@
 		
 		<!-- NAV BAR ROW --><!-- *** might want to switch to full length -->
 		<div id="navbar" class="row">
-			<div id="navbar-group1" class="navbar-group">
+			<div class="twocol"></div>
+			<div class ="eightcol navbar-bg">
+				<div id="portfolio-button" class="navbar-button">
+					<a href="<?php echo get_option('home'); ?>/projects/">DESIGN PORTFOLIO</a>
+				</div>
+				<div id="papers-button" class="navbar-button">
+					<a href="<?php echo get_option('home'); ?>/texts/">PAPERS</a>
+				</div>
+				<div id="morework-button" class="navbar-button">
+					<a href="<?php echo get_option('home'); ?>/">OTHER WORK</a>
+				</div>
+				<div id="blog-button" class="navbar-button">
+					<a href="<?php echo get_option('home'); ?>/blog/">BLOG</a>
+				</div>
+			</div>
+			<div class="twocol"></div>
+			
+			<!--<div id="navbar-group1" class="navbar-group">
 				<a href="<?php echo get_option('home'); ?>/projects/"><img 
 						src="<?php bloginfo('template_directory'); ?>/images/design-idle.png"
 						onmouseover="this.src='<?php bloginfo('template_directory'); ?>/images/design-hover.png'" 
@@ -74,7 +91,7 @@
 						src="<?php bloginfo('template_directory'); ?>/images/blog-idle.png"
 						onmouseover="this.src='<?php bloginfo('template_directory'); ?>/images/blog-hover.png'" 
 						onmouseout="this.src='<?php bloginfo('template_directory'); ?>/images/blog-idle.png'"></a>
-			</div>
+			</div>-->
 		</div>
 	</div>
 <hr />

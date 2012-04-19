@@ -358,11 +358,11 @@ text-align: center;
 color: white;
 }
 #header a {
-color: white;
+/*color: white;*/
 text-decoration: none;
 }
 #header a:hover{
-color: black;
+/*color: black;*/
 }
 
 #title-row {
@@ -377,19 +377,19 @@ max-height: 75px;
 #navbar {
 text-align: center;
 margin-top: 10px;
-border-color: #333;
+/*border-color: #333;
 border-style: solid;
 border-top-width: 1px;
 border-bottom-width: 1px;
-color: black;
+color: black;*/
 }
-#navbar a{
+/*#navbar a{
 color: black;
 text-decoration: underline;
 }
 #navbar a:hover{
 color: #ccc;
-}
+}*/
 
 /*Navbar image placements*/
 .navbar-group{
@@ -397,6 +397,30 @@ float:left;
 }
 .navbar-group a{
 float:left;
+}
+
+.navbar-bg{
+background:#003333;
+height: 40px;
+}
+
+/*button stuff*/
+.navbar-button{
+display: inline;
+padding-left: 10px;
+padding-right: 10px;
+margin-right: 5px;
+margin-left: 5px;
+}
+.navbar-button a{
+font-size: 1.5em;
+color: #3399cc;
+text-decoration: none;
+padding-left: 2px;
+padding-right: 2px;
+}
+.navbar-button a:hover{
+color: #fff;
 }
 
 /* END! HEADER Specific */
