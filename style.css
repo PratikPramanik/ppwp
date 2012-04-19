@@ -358,8 +358,8 @@ text-align: center;
 color: white;
 }
 #header a {
-/*color: white;*/
-text-decoration: none;
+/*color: white;
+text-decoration: none;*/
 }
 #header a:hover{
 /*color: black;*/
@@ -415,12 +415,16 @@ margin-left: 5px;
 .navbar-button a{
 font-size: 1.5em;
 color: #3399cc;
-text-decoration: none;
+text-decoration: underline;
 padding-left: 2px;
 padding-right: 2px;
+border-bottom: 1px;
+border-style: solid;
+border-color: #3399cc;
 }
 .navbar-button a:hover{
 color: #fff;
+border-color: white;
 }
 .portfolio-button{
 }
