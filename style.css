@@ -494,7 +494,7 @@ display: inline;
 	/*column right twocol*/
 #copyright{
 /*background: #669966; /*if the whole row is replaced with an image, comment this out*/
-padding-top: 40px; /*if foot-info is only 2 lines, should be 22 greater than #foot-info*/
+padding-top: 20px; /*if foot-info is only 2 lines, should be 22 greater than #foot-info*/
 border-color: #003333;
 margin-right: -1px; /*match border-left-width to prevent spillover*/
 }
