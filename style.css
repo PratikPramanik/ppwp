@@ -19,9 +19,9 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 
 /* Base level font and spacing*/
 body {
-/*background: #ddd;*/
+/*background: #ddd;
 background-attachment: scroll;
-background-image: url('/wp-content/themes/ppwp/images/bg.jpg');
+background-image: url('/wp-content/themes/ppwp/images/bg.jpg');*/
 font-family: Georgia, "Times New Roman", Times, serif;
 }
 .container p {
@@ -414,17 +414,17 @@ margin-left: 5px;
 }
 .navbar-button a{
 font-size: 1.5em;
-color: #3399cc;
+color: #fff;/*#3399cc;*/
 text-decoration: underline;
 padding-left: 2px;
 padding-right: 2px;
 border-bottom: 1px;
 border-style: solid;
-border-color: #3399cc;
+border-color: #fff;
 }
 .navbar-button a:hover{
-color: #fff;
-border-color: white;
+color: #3399cc;
+border-color: #3399cc;
 }
 .portfolio-button{
 }
@@ -496,8 +496,6 @@ display: inline;
 /*background: #669966; /*if the whole row is replaced with an image, comment this out*/
 padding-top: 40px; /*if foot-info is only 2 lines, should be 22 greater than #foot-info*/
 border-color: #003333;
-border-style: solid;
-border-left-width: 1px;
 margin-right: -1px; /*match border-left-width to prevent spillover*/
 }
 #copyright p{
