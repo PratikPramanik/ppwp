@@ -52,7 +52,7 @@
 			<div class="twocol"></div>
 			<div class ="eightcol navbar-bg">
 				<div id="portfolio-button" class="navbar-button">
-					<a href="<?php echo get_option('home'); ?>/projects/">DESIGN PORTFOLIO</a>
+					<a href="<?php echo get_option('home'); ?>/portfolio/">DESIGN PORTFOLIO</a>
 				</div>
 				<div id="papers-button" class="navbar-button">
 					<a href="<?php echo get_option('home'); ?>/texts/">PAPERS</a>
