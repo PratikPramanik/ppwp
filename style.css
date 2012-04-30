@@ -21,8 +21,9 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 body {
 /*background: #ddd;
 background-attachment: scroll;
-background-image: url('/wp-content/themes/ppwp/images/bg.jpg');*/
+*/
 font-family: Georgia, "Times New Roman", Times, serif;
+background: black;
 }
 .container p {
 color: #000;
@@ -36,7 +37,10 @@ text-decoration: none;
 a:hover{
 text-decoration: underline;
 }
-.wrapper { min-height: 500px; zoom:1;}
+.wrapper {
+min-height: 500px;
+zoom:1;
+}
 
 /* ==================================================================================================================== */
 /* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
@@ -47,6 +51,8 @@ text-decoration: underline;
 padding-left: 20px;
 padding-right: 20px;
 padding-bottom: 20px;
+background: white;
+background-image: url('/wp-content/themes/ppwp/images/bg.png');
 }
 .container#header{ /*No padding LR for header title bar*/
 padding-left: 0px;
@@ -400,7 +406,6 @@ float:left;
 }
 
 .navbar-bg{
-background:#003333;
 height: 40px;
 }
 
@@ -414,13 +419,13 @@ margin-left: 5px;
 }
 .navbar-button a{
 font-size: 1.5em;
-color: #fff;/*#3399cc;*/
+color: #003333;/*#fff;/*#3399cc;*/
 text-decoration: underline;
 padding-left: 2px;
 padding-right: 2px;
 border-bottom: 1px;
 border-style: solid;
-border-color: #fff;
+border-color: #003333;/*#fff;*/
 }
 .navbar-button a:hover{
 color: #3399cc;
