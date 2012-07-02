@@ -27,7 +27,7 @@ background: black;
 }
 .container p {
 color: #000;
-text-align: left;
+/*text-align: left;*/
 margin: 10px 0 0 0;
 }
 a{
@@ -41,6 +41,34 @@ text-decoration: underline;
 min-height: 500px;
 zoom:1;
 }
+
+/* Wordpress Image alignment stuff */
+div.aligncenter, img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+div.alignright, img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+div.alignleft, img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+.aligncenter {
+	padding:2px 0 0 5px;
+	}
+.alignleft {
+	float:left;
+	padding:2px 0 0 10px;
+	}
+.alignright {
+	float:right;
+	padding:2px 10px 0 5px;
+	}
 
 /* ==================================================================================================================== */
 /* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
@@ -142,6 +170,29 @@ img {
 	height: auto;
 }
 
+/*** Rest of Pratik's stuff ***/
+
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+    
+/* Industry Contrarian specific stuff (links to archive.php and single.php) */
+.contrarian{
+padding-left: 25px;
+padding-bottom: 1px;
+margin-bottom: 15px;
+background-color: #033;
+}
+p.contrarian-title{
+font-family: "Lucida Grande","Lucida Sans", serif;
+font-size: 3em;
+color: white;
+}
+p.contrarian-sub{
+margin-top: -3px;
+padding-left: 7px;
+color: #C4C4C4;
+}
+
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
 
@@ -189,6 +240,7 @@ line-height: 1.6em;
 opacity: 1;
 margin-left: 20px;
 margin-right: 20px;
+padding-top: 10px;
 }
 .entry p{
 margin-bottom: 1em;

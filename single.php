@@ -12,21 +12,21 @@
 
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<h2><?php the_title(); ?></h2>
-				<span class="byline"><small><span class="date"><?php the_time('d') ?></span> <span class="month-year"><?php the_time('M y') ?></span> <span class="author">by <?php the_author() ?></span> | <span class="time"><?php the_time() ?></span></small></span>
+				<span class="byline"><small><span class="date"><?php the_time('d') ?></span> <span class="month-year"><?php the_time('M Y') ?></span> <span class="author">by <?php the_author() ?></span> | <span class="time"><?php the_time() ?></span></small></span>
 
 				<div class="entry">
 					<?php the_content(); ?>
 					
 
 					<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-					<?php the_tags( '<p class="small">Tags: ', ', ', '</p>'); ?>
 
 					<span class="postmetadata">
 						<?php edit_post_link('[EDIT POST]', '', ' &mdash; '); ?> 
 						Categories: <?php the_category(' / ') ?> &mdash;
 						<a href="<?php trackback_url(); ?> " rel="trackback">Trackback</a> &mdash;
 						<a href="<?php the_permalink() ?>">Permalink</a> &mdash;
-						Tweet
+						Tweet what you just read<br/>
+                        <?php the_tags( '<p class="small">Tags: ', ', ', '</p>'); ?>
 					</span>
 				</div>
 			</div>

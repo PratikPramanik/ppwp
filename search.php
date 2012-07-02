@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container" id="search"> <!-- Blog --->
+<div class="container" id="search"> <!-- Search Results --->
 	<div class="row">
 		<div class="twocol">
 			<!--<p>Three columns</p>-->
@@ -14,12 +14,16 @@
 				<h2 class="pagetitle">Search Results</h2>
 
 				<?php while (have_posts()) : the_post(); ?>
-
-					<div <?php post_class() ?>>
-						<span class="postmetadata"><?php the_category(' / ') ?> &mdash; <?php edit_post_link('Edit', '', ' &mdash; '); ?>  <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></span><br/>
-						<small><span class="date"><?php the_time('j') ?></span><br /><?php the_time('M y') ?> <!-- by <?php the_author() ?> --></small>
+					<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 						<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+						<span class="byline"><small><span class="date"><?php the_time('d') ?></span> <span class="time"><?php the_time('M Y') ?></span> <span class="author">by <?php the_author() ?></span></small></span>
 						
+
+						<div class="entry">
+							<?php the_content('<em>Continue reading &rarr;</em>'); ?>
+						</div>
+						<div class="clearfix"></div>
+						<span class="postmetadata"><?php edit_post_link('[EDIT POST]', '', ' &mdash; '); ?> Category: <?php the_category(' / ') ?> &mdash; <a href="<?php the_permalink() ?>">permalink</a> &mdash;  <?php comments_popup_link('No comments', '1 comment', '% comments'); ?></span><br/>
 
 					</div>
 

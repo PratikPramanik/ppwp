@@ -14,7 +14,7 @@
 				<?php while (have_posts()) : the_post(); ?>
 					<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 						<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-						<span class="byline"><small><span class="date"><?php the_time('d') ?></span> <span class="time"><?php the_time('M y') ?></span> <span class="author">by <?php the_author() ?></span></small></span>
+						<span class="byline"><small><span class="date"><?php the_time('d') ?></span> <span class="time"><?php the_time('M Y') ?></span> <span class="author">by <?php the_author() ?></span></small></span>
 						
 
 						<div class="entry">

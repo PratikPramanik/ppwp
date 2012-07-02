@@ -3,18 +3,19 @@
 <div class="container" id="blog"> <!-- Blog --->
 	<div class="row">
 		<div class="twocol">
-			<div class="navigation">
-					<div class="alignleft"><?php next_posts_link('&larr; Older Entries') ?></div>
-					<div class="alignright"><?php previous_posts_link('Newer Entries &rarr;') ?></div>
-					<div class="clearfix"></div>
-			</div>
 		</div>
 		<div class="eightcol content-area">
 			<?php if (have_posts()) : ?>
 
 			  <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 			  <?php /* If this is a category archive */ if (is_category()) { ?>
-				<h2 class="pagetitle"><?php single_cat_title(); ?></h2>
+                    <?php /* Contrarian */ if ( in_category( 'industry-contrarian' ) ) : ?>
+                        <div class="contrarian">
+                            <p class="contrarian-title"><?php single_cat_title(); ?></p>
+                            <p class="contrarian-sub">   Thinking differently about the latest news with Pratik Pramanik</p>
+                        </div>
+                    <?php else : ?>
+                        <h2 class="pagetitle"><?php single_cat_title(); ?></h2> <?php endif;?>
 			  <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
 				<h2 class="pagetitle">Posts Tagged: <?php single_tag_title(); ?></h2>
 			  <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
@@ -31,27 +32,26 @@
 
 
 				<?php while (have_posts()) : the_post(); ?>
-				
-				<div <?php post_class() ?>>
-						<span class="postmetadata"><?php the_category(' / ') ?> &mdash; <?php edit_post_link('Edit', '', ' &mdash; '); ?>  <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></span><br/>
-						<small><span class="date"><?php the_time('j') ?></span><br /><?php the_time('M y') ?> <!-- by <?php the_author() ?> --></small>
+					<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 						<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+						<span class="byline"><small><span class="date"><?php the_time('d') ?></span> <span class="time"><?php the_time('M Y') ?></span> <span class="author">by <?php the_author() ?></span></small></span>
+						
 
 						<div class="entry">
 							<?php the_content('<em>Continue reading &rarr;</em>'); ?>
 						</div>
-						<div class="clearfix"></div>				
+						<div class="clearfix"></div>
+						<span class="postmetadata"><?php edit_post_link('[EDIT POST]', '', ' &mdash; '); ?> Category: <?php the_category(' / ') ?> &mdash; <a href="<?php the_permalink() ?>">permalink</a> &mdash;  <?php comments_popup_link('No comments', '1 comment', '% comments'); ?></span><br/>
 
 					</div>
 
 				<?php endwhile; ?>
 				
-				<!-- experimenting with remove
 				<div class="navigation">
 					<div class="alignleft"><?php next_posts_link('&larr; Older Entries') ?></div>
 					<div class="alignright"><?php previous_posts_link('Newer Entries &rarr;') ?></div>
 					<div class="clearfix"></div>
-				</div>-->
+				</div>
 
 			<?php else :
 
@@ -70,11 +70,6 @@
 			endif;?>
 		</div>
 		<div class="twocol last">
-			<div class="navigation">
-					<div class="alignleft"><?php next_posts_link('&larr; Older Entries') ?></div>
-					<div class="alignright"><?php previous_posts_link('Newer Entries &rarr;') ?></div>
-					<div class="clearfix"></div>
-			</div>
 		</div>
 	</div>
 </div>
